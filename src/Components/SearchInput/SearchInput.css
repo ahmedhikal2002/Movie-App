@@ -1,0 +1,27 @@
+.main {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+
+.main form {
+  width: 100%;
+  margin-top: 10%;
+}
+.main form input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: bold;
+  background-color: var(--primary-clr);
+  color: white;
+  text-transform: capitalize;
+}
+
+@media (max-width: 575px) {
+  .main form {
+    width: 95%;
+    margin: 10% auto 0px auto;
+  }
+}

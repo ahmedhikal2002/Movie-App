@@ -1,0 +1,28 @@
+.header {
+  background-color: var(--primary-clr);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 19px;
+}
+
+@media (max-width: 575px) {
+  .header {
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .header nav ul {
+    gap: 15px;
+    font-size: 18px;
+  }
+}

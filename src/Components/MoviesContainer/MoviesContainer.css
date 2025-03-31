@@ -1,0 +1,79 @@
+.container {
+  width: 80%;
+  margin: 60px auto 0px auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.movies-list {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 30px;
+}
+.movies-list span.btn {
+  color: black;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: default;
+}
+.container .poster {
+  width: 200px;
+  border-radius: 5px;
+  transition: 0.3 all ease-in;
+  position: relative;
+}
+
+.container .poster img {
+  width: 100%;
+  border-radius: 5px;
+  max-height: 270px;
+}
+
+.container .poster img:hover {
+  border: 2px solid var(--btn-clr);
+  transform: scale(0.99);
+}
+
+.container .poster .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 4px;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  transform: translateX(-50%);
+  background-color: rgba(50, 50, 50, 0.738);
+  border-radius: 2px;
+}
+
+.container .poster .icons svg {
+  cursor: pointer;
+}
+
+.container .poster .icons svg :hover {
+  color: var(--btn-clr);
+}
+.container .poster:hover .icons {
+  opacity: 1;
+  bottom: 40px;
+}
+.container span {
+  color: #9b9999;
+  font-size: 35px;
+  display: block;
+  margin: auto;
+  font-weight: 900;
+}
+@media (max-width: 575px) {
+  .container {
+    margin: 40px auto 0px auto;
+  }
+}
